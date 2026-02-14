@@ -26,4 +26,5 @@ packages = [
     "webaudio_sdk",
     "recording_sdk",
     "elevenlabs_sdk",
+    "metta_sdk",
 ]

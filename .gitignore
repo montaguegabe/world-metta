@@ -214,3 +214,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Metta SDK generated files
+metta_sdk/.cache/
+metta_sdk/output/
+metta_sdk/segments/*.wav
+metta_sdk/segments/segments.json
+
+# User recordings
+*.m4a

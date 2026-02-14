@@ -1,0 +1,223 @@
+{
+  "name": "Expanding Circles Metta",
+  "description": "Metta meditation expanding from self to others to all beings, with cultural voices",
+  "crossfade_between_sec": 3.0,
+  "final_fade_out_sec": 5.0,
+  "sections": [
+    {
+      "name": "Self (May I)",
+      "description": "Personal, intimate self-compassion in original voice",
+      "crossfade_within_sec": 0.5,
+      "segments": [
+        {
+          "subject": "I",
+          "quality": "happy",
+          "occurrence": 1,
+          "voice": "original",
+          "ambiance": null,
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "I",
+          "quality": "peaceful",
+          "occurrence": 1,
+          "voice": "original",
+          "ambiance": null,
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "I",
+          "quality": "belong",
+          "occurrence": 1,
+          "voice": "original",
+          "ambiance": null,
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "I",
+          "quality": "happy",
+          "occurrence": 2,
+          "voice": "original",
+          "ambiance": null,
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "I",
+          "quality": "peaceful",
+          "occurrence": 2,
+          "voice": "original",
+          "ambiance": null,
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "I",
+          "quality": "belong",
+          "occurrence": 2,
+          "voice": "original",
+          "ambiance": null,
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Other (May You) - Japanese",
+      "description": "Extending compassion to others with Japanese zen ambiance",
+      "crossfade_within_sec": 0.5,
+      "segments": [
+        {
+          "subject": "you",
+          "quality": "happy",
+          "occurrence": 1,
+          "voice": "japanese",
+          "ambiance": "japanese",
+          "ambiance_volume": 0.25,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "you",
+          "quality": "peaceful",
+          "occurrence": 1,
+          "voice": "japanese",
+          "ambiance": "japanese",
+          "ambiance_volume": 0.25,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "you",
+          "quality": "belong",
+          "occurrence": 1,
+          "voice": "japanese",
+          "ambiance": "japanese",
+          "ambiance_volume": 0.25,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Other (May You) - Indian",
+      "description": "Extending compassion with Indian temple ambiance",
+      "crossfade_within_sec": 0.5,
+      "segments": [
+        {
+          "subject": "you",
+          "quality": "happy",
+          "occurrence": 2,
+          "voice": "indian",
+          "ambiance": "indian",
+          "ambiance_volume": 0.25,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "you",
+          "quality": "peaceful",
+          "occurrence": 2,
+          "voice": "indian",
+          "ambiance": "indian",
+          "ambiance_volume": 0.25,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "you",
+          "quality": "belong",
+          "occurrence": 2,
+          "voice": "indian",
+          "ambiance": "indian",
+          "ambiance_volume": 0.25,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        }
+      ]
+    },
+    {
+      "name": "All Beings (May We All) - African",
+      "description": "Universal compassion with African ambiance",
+      "crossfade_within_sec": 0.5,
+      "segments": [
+        {
+          "subject": "we_all",
+          "quality": "happy",
+          "occurrence": 1,
+          "voice": "african",
+          "ambiance": "african",
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "we_all",
+          "quality": "peaceful",
+          "occurrence": 1,
+          "voice": "african",
+          "ambiance": "african",
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "we_all",
+          "quality": "belong",
+          "occurrence": 1,
+          "voice": "african",
+          "ambiance": "african",
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        }
+      ]
+    },
+    {
+      "name": "All Beings (May We All) - Celtic",
+      "description": "Universal compassion with Celtic ambiance",
+      "crossfade_within_sec": 0.5,
+      "segments": [
+        {
+          "subject": "we_all",
+          "quality": "happy",
+          "occurrence": 2,
+          "voice": "celtic",
+          "ambiance": "celtic",
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "we_all",
+          "quality": "peaceful",
+          "occurrence": 2,
+          "voice": "celtic",
+          "ambiance": "celtic",
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 0.0
+        },
+        {
+          "subject": "we_all",
+          "quality": "belong",
+          "occurrence": 2,
+          "voice": "celtic",
+          "ambiance": "celtic",
+          "ambiance_volume": 0.3,
+          "fade_in_sec": 0.0,
+          "fade_out_sec": 2.0
+        }
+      ]
+    }
+  ]
+}
