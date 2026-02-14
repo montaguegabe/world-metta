@@ -1,3 +1,7 @@
+# World Metta Generator
+
+This is experimental and the resulting meditation generated still is a work in progress.
+
 # Deep Listening Music SDK
 
 A mindfulness-focused audio SDK for the **Deep Listening Mindful Makers Hack**. This collection of five mini-SDKs provides tools for meditation, emotional engagement with music, and mindful listening experiences.
