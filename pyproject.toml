@@ -1,16 +1,14 @@
 [project]
-name = "deep-listening-sdk"
+name = "world-metta"
 version = "0.1.0"
-description = "Mindfulness-focused audio SDK for Deep Listening Mindful Makers Hack"
+description = "Cross-cultural metta meditation generator using ElevenLabs voice conversion"
 requires-python = ">=3.10"
 
 dependencies = [
     "librosa>=0.10.0",
     "numpy>=1.24.0",
     "scipy>=1.10.0",
-    "sounddevice>=0.4.6",
     "soundfile>=0.12.0",
-    "requests>=2.28.0",
     "elevenlabs>=1.0.0",
     "python-dotenv>=1.0.0",
 ]
@@ -20,11 +18,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = [
-    "librosa_sdk",
-    "freesound_sdk",
-    "webaudio_sdk",
-    "recording_sdk",
-    "elevenlabs_sdk",
-    "metta_sdk",
-]
+packages = ["metta_sdk"]

@@ -214,11 +214,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-# Metta SDK generated files
+# Metta SDK cache and intermediate files
 metta_sdk/.cache/
-metta_sdk/output/
 metta_sdk/segments/*.wav
 metta_sdk/segments/segments.json
+
+# Generated music (but NOT the final meditation)
+metta_sdk/output/meditation_music.wav
 
 # User recordings
 *.m4a

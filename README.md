@@ -1,86 +1,78 @@
-# World Metta Generator
+# World Metta
 
-This is experimental and the resulting meditation generated still is a work in progress.
+A cross-cultural metta (loving-kindness) meditation that transforms a single voice recording into a journey through diverse cultural voices and ambient soundscapes.
 
-# Deep Listening Music SDK
+## The Meditation
 
-A mindfulness-focused audio SDK for the **Deep Listening Mindful Makers Hack**. This collection of five mini-SDKs provides tools for meditation, emotional engagement with music, and mindful listening experiences.
+**Listen to the generated meditation:** [`metta_sdk/output/world_voices_meditation.wav`](metta_sdk/output/world_voices_meditation.wav)
 
-## What is Deep Listening?
+Duration: ~5.5 minutes
 
-Deep Listening is a practice developed by composer Pauline Oliveros that involves listening with intention and awareness.
+The meditation progresses through:
+1. **Original voice** - Personal metta phrases ("May I...", "May you...")
+2. **Japanese** - With zen garden ambiance
+3. **Indian** - With temple bells and sitar
+4. **Arabic** - With desert oasis sounds
+5. **British** - With English countryside ambiance
+6. **Chinese** - With traditional garden atmosphere
+7. **Celtic** - With Irish countryside sounds
+8. **Australian** - With outback ambiance
 
-This SDK brings Deep Listening principles to developers through:
+Features:
+- Alternating male/female voices
+- Progressive gaps between phrases (longer pauses as meditation deepens)
+- Overlapping ambient soundscapes that crossfade into each other
+- Background music that builds from subtle to prominent
+- 30-second contemplative ending
 
-- **Audio Analysis** - Understanding the meditative qualities of sound
-- **Sound Discovery** - Finding the perfect ambient textures
-- **Therapeutic Tones** - Generating binaural beats and isochronic tones
-- **Voice Journaling** - Recording reflections and soundscapes
-- **AI Generation** - Creating custom meditation music
+## How It Works
 
-## Installation
+The system uses ElevenLabs APIs to:
+1. Convert speech to different cultural voices (speech-to-speech)
+2. Generate culturally-appropriate ambient sounds
+3. Generate meditation background music
+
+All API responses are cached locally to enable rapid iteration without repeated API calls.
+
+## Setup
 
 ```bash
-cd mindful-makers-deep-listening-sdk
 uv sync
-cp .env.example .env  # Add your API keys
+cp .env.example .env  # Add your ELEVENLABS_API_KEY
 ```
 
-## Mini-SDKs
+## Regenerating the Meditation
 
-### 1. Librosa SDK - Audio Analysis for Mindfulness
-
-Analyze audio to understand its meditative qualities.
-
-See [librosa_sdk/README.md](librosa_sdk/README.md) for full documentation.
-
-### 2. Freesound SDK - Discover Meditation Sounds
-
-Search and download CC-licensed sounds for meditation.
-
-**Requires:** Freesound API key (free at [freesound.org/apiv2/apply](https://freesound.org/apiv2/apply))
-
-See [freesound_sdk/README.md](freesound_sdk/README.md) for full documentation.
-
-### 3. WebAudio SDK - Therapeutic Tone Generation
-
-Generate binaural beats and isochronic tones for meditation.
-
-See [webaudio_sdk/README.md](webaudio_sdk/README.md) for full documentation.
-
-### 4. Recording SDK - Voice Journaling
-
-Capture audio for journaling and soundscape creation.
-
-See [recording_sdk/README.md](recording_sdk/README.md) for full documentation.
-
-### 5. ElevenLabs SDK - AI Meditation Music
-
-Generate custom meditation music and nature sounds.
-
-**Requires:** ElevenLabs API key
-
-See [elevenlabs_sdk/README.md](elevenlabs_sdk/README.md) for full documentation.
-
-## Quick Start Examples
-
-Run any example to see the SDK in action:
+To regenerate with the same plan:
 
 ```bash
-# Analyze audio (no API key needed)
-uv run python librosa_sdk/example.py
+# Generate background music (cached after first run)
+uv run python metta_sdk/generate_music.py
 
-# Generate binaural beats (no API key needed)
-uv run python webaudio_sdk/example.py
+# Generate the full meditation
+uv run python metta_sdk/generate.py
+```
 
-# Record audio (no API key needed, requires microphone)
-uv run python recording_sdk/example.py
+## Customization
 
-# Search meditation sounds (requires Freesound API key)
-uv run python freesound_sdk/example.py
+Edit `metta_sdk/plan.json` to customize:
+- Voice/culture assignments per section
+- Gap timing between phrases
+- Ambiance overlap duration
+- Music volume progression
 
-# Generate AI music (requires ElevenLabs API key)
-uv run python elevenlabs_sdk/example.py
+## Project Structure
+
+```
+metta_sdk/
+  plan.json          # Meditation structure definition
+  generate.py        # Main generation script
+  generate_music.py  # Background music generator
+  generator.py       # Core orchestration logic
+  voices.py          # Cultural voice mappings
+  mixer.py           # Audio mixing utilities
+  cache.py           # API response caching
+  output/            # Generated meditation files
 ```
 
 ## License
